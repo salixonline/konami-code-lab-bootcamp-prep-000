@@ -8,7 +8,7 @@ function init() {
     if (sequence.length === 10) {
       sequence.shift();
     }
-    sequence.push(parseInt(e.which));
+    sequence.push(parseInt(e.detail));
     if (sequence.length < 10) {
       return false;
     }
